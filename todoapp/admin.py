@@ -4,6 +4,3 @@ from .models import *
 
 admin.site.register(Task)
 admin.site.register(UserProfile)
-#admin@admi.com
-#admin
-#admin123

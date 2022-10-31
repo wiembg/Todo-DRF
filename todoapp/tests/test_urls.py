@@ -1,6 +1,6 @@
 from django.test import SimpleTestCase
 from django.urls import reverse,resolve
-from .views import *
+from todoapp.views import *
 #cmd:python manage.py test
 
 class TestUrls(SimpleTestCase):
@@ -15,4 +15,7 @@ class TestUrls(SimpleTestCase):
         url=reverse('user-list')
         f=resolve(url).func.__name__
         f1=UserList.as_view().__name__
-        self.assertEquals(f,f1)        
+        self.assertEquals(f,f1)       
+
+
+

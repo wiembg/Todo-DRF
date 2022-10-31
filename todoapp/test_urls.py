@@ -1,6 +1,8 @@
 from django.test import SimpleTestCase
 from django.urls import reverse,resolve
 from .views import *
+#cmd:python manage.py test
+
 class TestUrls(SimpleTestCase):
     def test_equal(self):
         self.assertEqual(1,3)   

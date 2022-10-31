@@ -35,7 +35,7 @@ class ListTodo(generics.ListAPIView): #Read
 class DetailTodo(generics.RetrieveUpdateAPIView): #update
      queryset=Task.objects.all()
      serializer_class=TaskSerializer
-     permission_classes = [permissions.IsAuthenticatedOrReadOnly,IsOwnerOrReadOnly]  
+     permission_classes = [permissions.IsAuthenticatedOrReadOnly,IsOwnerOrReadOnly]
 class CreateTodo(generics.CreateAPIView): #create
     queryset=Task.objects.all()
     serializer_class=TaskSerializer   

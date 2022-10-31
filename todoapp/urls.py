@@ -4,6 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = format_suffix_patterns([
     path('',api_root),
+    
     path('todos/',ListTodo.as_view(),name='task-list'),
     path('create/',CreateTodo.as_view(),name='create'),
     path('todos/<int:pk>/',DetailTodo.as_view(),name='task-detail'),

@@ -2,7 +2,7 @@ from django.urls import path
 from .views import *
 from .views import SignUpView
 from rest_framework.urlpatterns import format_suffix_patterns
-
+app_name = 'todoapp'
 urlpatterns = format_suffix_patterns([
     path('',api_root),   
     path("signup/", SignUpView.as_view(), name="signup"),

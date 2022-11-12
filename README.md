@@ -3,4 +3,4 @@ this project is simple TodoApp is built with DjangoRestFramework (DRF) ,developi
 - Read,create,update and delete tasks
 - Auth  provided by Restframework
 - Permissions are used to grant or deny access for different classes of users to different parts of the API. 
-- Test urls in test folder use : py manage.py test
+- Test urls+views in test folder use : py manage.py test
